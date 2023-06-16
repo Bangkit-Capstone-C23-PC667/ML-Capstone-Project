@@ -32,7 +32,7 @@ model.compile(optimizer=opt, loss=cost_fn)
 
 @app.route("/")
 def home():
-    return "ML jalan"
+    return "Machine learning is running on port 8080. Test and see the documentation on this link: https://app.swaggerhub.com/apis-docs/Fayed06/quisiin/1.2"
 
 @app.route('/kuesioner/<int:user_id>/max_item=<int:max>', methods=["GET"])
 def kuesioner(user_id,max=10):
